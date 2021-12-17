@@ -36,34 +36,23 @@ def load_model():
     model.add(Conv2D(32, (5,5), padding='same', activation='relu',input_shape=(200, 200, 3)))
     model.add(MaxPooling2D(pool_size=(2,2)))
     model.add(Dropout(0.2))
-    model.add(Conv2D(32, (5,5), padding='same', activation='relu'))
-    model.add(MaxPooling2D(pool_size=(2,2)))
-    model.add(Dropout(0.2))
 
     model.add(Conv2D(64, (5,5), padding='same', activation='relu'))
     model.add(MaxPooling2D(pool_size=(2,2)))
     model.add(Dropout(0.2))
-    model.add(Conv2D(64, (5,5), padding='same', activation='relu'))
-    model.add(MaxPooling2D(pool_size=(2,2)))
-    model.add(Dropout(0.2))
 
-    model.add(Conv2D(128, (5,5), padding='same', activation='relu'))
-    model.add(MaxPooling2D(pool_size=(2,2)))
-    model.add(Dropout(0.2))
     model.add(Conv2D(128, (5,5), padding='same', activation='relu'))
     model.add(MaxPooling2D(pool_size=(2,2)))
     model.add(Dropout(0.2))
 
     model.add(Flatten())
-    model.add(Dense(256, activation='relu'))
-    model.add(Dropout(0.2))
     model.add(Dense(64, activation='relu'))
     model.add(Dropout(0.2))
-    model.add(Dense(7, activation='softmax'))
+    model.add(Dense(2, activation='softmax'))
     
-    model.load_weights('checkpoint/cp-048.pkl')
+    model.load_weights('trained_model_checkpoint.pkl') #file not included in this repo. Put your trained checkpoint file here
     
-    model.compile(Adam(lr=0.0001), loss='categorical_crossentropy', metrics=['accuracy'])
+    model.compile(Adam(lr=0.01), loss='categorical_crossentropy', metrics=['accuracy'])
     
     return model
 
@@ -78,7 +67,7 @@ def image():
         image_arr = np.array(image_object) # convert frame into array 
         image_arr = cv2.resize(image_arr, (200, 200))
         input_image = np.expand_dims(image_arr,axis=0)
-        model = load_model() # load ML model
+        model = load_model() # load ML model - above model is just a sample. load your own model and checkpoint in def model()
         prediction = model.predict(input_image) # model prediction
         print(prediction) # print prediction on console
         output = {'object':'return something'} #currently we dont have anything to return
