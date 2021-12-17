@@ -1,9 +1,3 @@
-/**
- * Created by chad hart on 11/30/17.
- * Client side of Tensor Flow Object Detection Web API
- * Written for webrtcHacks - https://webrtchacks.com
- */
-
 //Parameters
 const s = document.getElementById('objDetect');
 const sourceVideo = s.getAttribute("data-source");  //the source video to use
