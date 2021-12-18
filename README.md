@@ -18,3 +18,4 @@ For remote live stream, you will have to host server.py on a server or perform t
 
 Once done, open the server URL with '/local' and it will fetch the camera live stream and send it to the remote server for model predictions. Model predictions will be displayed on server.py console. You can further edit the inference code in def image() in server.py
 
+This code is a development inspired by this wonderful blog - https://webrtchacks.com/webrtc-cv-tensorflow/
