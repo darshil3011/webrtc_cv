@@ -1,6 +1,8 @@
 # Computer vision on WebRTC live stream
 
-This repo shows implementation of computer vision AI models on WebRTC live stream using python and JS. Checkout my detailed medium blog for code explaination - https://thinkinbytes.medium.com/implement-computer-vision-on-remote-live-camera-feed-using-webrtc-6153ad18d85f
+This repo shows implementation of computer vision AI models on WebRTC live stream using python and JS. 
+
+Checkout my detailed medium blog for code explaination - https://thinkinbytes.medium.com/implement-computer-vision-on-remote-live-camera-feed-using-webrtc-6153ad18d85f
 
 # How to test
 
