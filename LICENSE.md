@@ -10,12 +10,12 @@ copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice along with the name of the 
-developer "Darshil Modi" shall be included in allcopies or any portions of the code 
+developer "Darshil Modi" shall be included in all copies or any portions of the code 
 used, modified or sold.
 
 If any part of the code is used, modified, merged, distributed on commericial purposes, 
-It requires the code to remain open-source along with the proper citation and credits 
-of the developer "Darshil Modi".
+It requires the code to remain open-source along with the proper citation, documentation 
+and credits of the developer "Darshil Modi".
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
